@@ -22,6 +22,7 @@ let nameCity = async (req, res, next) => {
     next(error);
   }
 };
+
 let idCity = async (req, res, next) => {
   try {
     let id = req.params.id;
