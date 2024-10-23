@@ -160,7 +160,7 @@ const cities = [
     image: "/Images/oaxaca.jpg",
   },
   {
-    name: "París",
+    name: "Paris",
     country: "France",
     continent: "Europe",
     description:
