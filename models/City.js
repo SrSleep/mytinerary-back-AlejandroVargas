@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-let collection = "Cities";
+let collection = "cities";
 
 const citySchema = new Schema(
   {
@@ -18,7 +18,7 @@ const citySchema = new Schema(
     currency: { type: String, required: true },
     attractions: { type: [String], required: true },
     image: { type: String, required: true },
-},
+  },
   {
     timestamps: true,
   }

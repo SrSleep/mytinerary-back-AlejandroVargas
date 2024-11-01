@@ -1,6 +1,6 @@
 import City from "../../models/City.js";
 
-const updateById = async (req, res, next) => {
+const updateByIdCity = async (req, res, next) => {
     try {
         let city = req.body
         let update = await City.findByIdAndUpdate(
@@ -25,4 +25,4 @@ const updateById = async (req, res, next) => {
 
 }
 
-export default updateById
+export default updateByIdCity
