@@ -10,7 +10,7 @@ const itineraries = [
         price: 5,
         duration: 6,
         likes: 0,
-        hashtags: "#adventure #nature",
+        hashtags: ["adventure", "nature"],
         comments: "Amazing experience!"
     },
     {
@@ -20,7 +20,7 @@ const itineraries = [
         price: 4,
         duration: 4,
         likes: 0,
-        hashtags: "#city #culture",
+        hashtags: ["city", "culture"],
         comments: "Loved the museums!"
     },
     {
@@ -30,7 +30,7 @@ const itineraries = [
         price: 3,
         duration: 5,
         likes: 0,
-        hashtags: "#food #travel",
+        hashtags: ["food", "travel"],
         comments: "The food was fantastic!"
     },
     {
@@ -40,7 +40,7 @@ const itineraries = [
         price: 2,
         duration: 3,
         likes: 0,
-        hashtags: "#relax #beach",
+        hashtags: ["relax", "beach"],
         comments: "Perfect for a getaway!"
     },
     {
@@ -50,7 +50,7 @@ const itineraries = [
         price: 4,
         duration: 2,
         likes: 0,
-        hashtags: "#shopping #fun",
+        hashtags: ["shopping", "fun"],
         comments: "Great places to shop!"
     },
     {
@@ -60,7 +60,7 @@ const itineraries = [
         price: 3,
         duration: 5,
         likes: 0,
-        hashtags: "#art #exhibition",
+        hashtags: ["art", "exhibition"],
         comments: "So much to see!"
     },
     {
@@ -70,7 +70,7 @@ const itineraries = [
         price: 2,
         duration: 4,
         likes: 0,
-        hashtags: "#historic #landmarks",
+        hashtags: ["historic", "landmarks"],
         comments: "The history is rich here!"
     },
     {
@@ -80,7 +80,7 @@ const itineraries = [
         price: 5,
         duration: 7,
         likes: 0,
-        hashtags: "#adventure #outdoors",
+        hashtags: ["adventure", "outdoors"],
         comments: "A must-visit for thrill-seekers!"
     },
     {
@@ -90,7 +90,7 @@ const itineraries = [
         price: 4,
         duration: 3,
         likes: 0,
-        hashtags: "#family #fun",
+        hashtags: ["family", "fun"],
         comments: "Perfect for a family trip!"
     },
     {
@@ -100,7 +100,7 @@ const itineraries = [
         price: 5,
         duration: 7,
         likes: 0,
-        hashtags: "#nature #explore",
+        hashtags: ["nature", "explore"],
         comments: "A breathtaking journey through nature!"
     },
     {
@@ -110,7 +110,7 @@ const itineraries = [
         price: 4,
         duration: 4,
         likes: 0,
-        hashtags: "#adventure #outdoors",
+        hashtags: ["adventure", "outdoors"],
         comments: "Perfect for outdoor enthusiasts!"
     },
     {
@@ -120,7 +120,7 @@ const itineraries = [
         price: 3,
         duration: 5,
         likes: 0,
-        hashtags: "#art #culture",
+        hashtags: ["art", "culture"],
         comments: "An artistic experience like no other."
     },
     {
@@ -130,7 +130,7 @@ const itineraries = [
         price: 2,
         duration: 3,
         likes: 0,
-        hashtags: "#family #fun",
+        hashtags: ["family", "fun"],
         comments: "A great trip for the whole family!"
     },
     {
@@ -140,7 +140,7 @@ const itineraries = [
         price: 4,
         duration: 6,
         likes: 0,
-        hashtags: "#food #travel",
+        hashtags: ["food", "travel"],
         comments: "Delicious food and amazing sights!"
     },
     {
@@ -150,7 +150,7 @@ const itineraries = [
         price: 5,
         duration: 7,
         likes: 0,
-        hashtags: "#adventure #exploration",
+        hashtags: ["adventure", "exploration"],
         comments: "An unforgettable adventure!"
     },
     {
@@ -160,7 +160,7 @@ const itineraries = [
         price: 4,
         duration: 3,
         likes: 0,
-        hashtags: "#family #fun",
+        hashtags: ["family", "fun"],
         comments: "Great for family trips!"
     },
     {
@@ -170,7 +170,7 @@ const itineraries = [
         price: 3,
         duration: 4,
         likes: 0,
-        hashtags: "#food #local",
+        hashtags:["food", "local"],
         comments: "Delicious local cuisine!"
     },
     {
@@ -180,7 +180,7 @@ const itineraries = [
         price: 2,
         duration: 6,
         likes: 0,
-        hashtags: "#relaxation #nature",
+        hashtags: ["relaxation", "nature"],
         comments: "A serene escape into nature."
     },
     {
@@ -190,7 +190,7 @@ const itineraries = [
         price: 5,
         duration: 5,
         likes: 0,
-        hashtags: "#culture #explore",
+        hashtags: ["culture", "explore"],
         comments: "Amazing cultural experience!"
     },
     {
@@ -200,7 +200,7 @@ const itineraries = [
         price: 3,
         duration: 3,
         likes: 0,
-        hashtags: "#sightseeing #history",
+        hashtags: ["sightseeing", "history"],
         comments: "So much history to see!"
     },
     {
@@ -210,7 +210,7 @@ const itineraries = [
         price: 4,
         duration: 6,
         likes: 0,
-        hashtags: "#adventure #nature",
+        hashtags: ["adventure", "nature"],
         comments: "A breathtaking adventure in nature!"
     },
     {
@@ -220,7 +220,7 @@ const itineraries = [
         price: 2,
         duration: 2,
         likes: 0,
-        hashtags: "#relaxation #beach",
+        hashtags: ["relaxation", "beach"],
         comments: "Perfect spot to unwind!"
     },
     {
@@ -230,7 +230,7 @@ const itineraries = [
         price: 5,
         duration: 8,
         likes: 0,
-        hashtags: "#exploration #foodie",
+        hashtags: ["exploration", "foodie"],
         comments: "Amazing food and great sights!"
     },
     {
@@ -240,7 +240,7 @@ const itineraries = [
         price: 3,
         duration: 5,
         likes: 0,
-        hashtags: "#culture #history",
+        hashtags:["culture", "history"],
         comments: "A deep dive into the local culture!"
     },
     {
@@ -250,7 +250,7 @@ const itineraries = [
         price: 4,
         duration: 3,
         likes: 0,
-        hashtags: "#family #fun",
+        hashtags: ["family", "fun"],
         comments: "Great for the whole family!"
     },
     {
@@ -260,7 +260,7 @@ const itineraries = [
         price: 5,
         duration: 7,
         likes: 0,
-        hashtags: "#adventure #hiking",
+        hashtags: ["adventure", "hiking"],
         comments: "The hiking trails are spectacular!"
     },
     {
@@ -270,7 +270,7 @@ const itineraries = [
         price: 2,
         duration: 4,
         likes: 0,
-        hashtags: "#shopping #local",
+        hashtags: ["shopping", "local"],
         comments: "Perfect places to shop local crafts!"
     },
     {
@@ -280,7 +280,7 @@ const itineraries = [
         price: 4,
         duration: 6,
         likes: 0,
-        hashtags: "#foodie #culinary",
+        hashtags: ["foodie", "culinary"],
         comments: "A delightful culinary journey!"
     },
     {
@@ -290,7 +290,7 @@ const itineraries = [
         price: 5,
         duration: 3,
         likes: 0,
-        hashtags: "#art #exploration",
+        hashtags:["art", "exploration"] ,
         comments: "Exploring the art scene was amazing!"
     },
     {
@@ -300,7 +300,7 @@ const itineraries = [
         price: 2,
         duration: 4,
         likes: 0,
-        hashtags: "#nature #relaxation",
+        hashtags:["nature", "relaxation"] ,
         comments: "A peaceful retreat in nature."
     },
     {
@@ -310,7 +310,7 @@ const itineraries = [
         price: 3,
         duration: 6,
         likes: 0,
-        hashtags: "#adventure #hiking",
+        hashtags:["adventure", "hiking"],
         comments: "Amazing trails and breathtaking views!"
     },
     {
@@ -320,7 +320,7 @@ const itineraries = [
         price: 5,
         duration: 7,
         likes: 0,
-        hashtags: "#beach #relaxation",
+        hashtags: ["beach", "relaxation"],
         comments: "The perfect getaway to unwind and relax!"
     },
     {
@@ -330,7 +330,7 @@ const itineraries = [
         price: 4,
         duration: 3,
         likes: 0,
-        hashtags: "#history #culture",
+        hashtags: ["history", "culture"],
         comments: "An enriching cultural experience."
     },
 ];

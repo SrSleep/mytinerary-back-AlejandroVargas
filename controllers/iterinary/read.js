@@ -15,7 +15,7 @@ let all = async (req, res, next) => {
 let itineraryByCity = async (req, res, next) => {
     try {
         let cityId = req.params.id
-        let itineraries = await Itinerary.find({ cityId: cityId }).populate('cityId', 'name').exec();
+        let itineraries = await Itinerary.find({ cityId: cityId }).populate('cityId', 'name image').exec();
         return res.status(200).json({
             itineraries: itineraries,
         });
