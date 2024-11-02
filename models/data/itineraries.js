@@ -11,7 +11,8 @@ const itineraries = [
         duration: 6,
         likes: 0,
         hashtags: ["adventure", "nature"],
-        comments: "Amazing experience!"
+        comments: "Amazing experience!",
+        title: "Adventure in Nature"
     },
     {
         cityId: "672430ef4a985393f95ead84",
@@ -21,7 +22,8 @@ const itineraries = [
         duration: 4,
         likes: 0,
         hashtags: ["city", "culture"],
-        comments: "Loved the museums!"
+        comments: "Loved the museums!",
+        title: "Cultural City Tour"
     },
     {
         cityId: "672430ef4a985393f95ead84",
@@ -31,7 +33,8 @@ const itineraries = [
         duration: 5,
         likes: 0,
         hashtags: ["food", "travel"],
-        comments: "The food was fantastic!"
+        comments: "The food was fantastic!",
+        title: "Culinary Journey"
     },
     {
         cityId: "672430ef4a985393f95ead85",
@@ -41,7 +44,8 @@ const itineraries = [
         duration: 3,
         likes: 0,
         hashtags: ["relax", "beach"],
-        comments: "Perfect for a getaway!"
+        comments: "Perfect for a getaway!",
+        title: "Relaxing Beach Escape"
     },
     {
         cityId: "672430ef4a985393f95ead86",
@@ -51,7 +55,8 @@ const itineraries = [
         duration: 2,
         likes: 0,
         hashtags: ["shopping", "fun"],
-        comments: "Great places to shop!"
+        comments: "Great places to shop!",
+        title: "Shopping Spree"
     },
     {
         cityId: "672430ef4a985393f95ead86",
@@ -61,7 +66,8 @@ const itineraries = [
         duration: 5,
         likes: 0,
         hashtags: ["art", "exhibition"],
-        comments: "So much to see!"
+        comments: "So much to see!",
+        title: "Art Exhibition Experience"
     },
     {
         cityId: "672430ef4a985393f95ead86",
@@ -71,7 +77,8 @@ const itineraries = [
         duration: 4,
         likes: 0,
         hashtags: ["historic", "landmarks"],
-        comments: "The history is rich here!"
+        comments: "The history is rich here!",
+        title: "Historic Landmarks Tour"
     },
     {
         cityId: "672430ef4a985393f95ead86",
@@ -81,7 +88,8 @@ const itineraries = [
         duration: 7,
         likes: 0,
         hashtags: ["adventure", "outdoors"],
-        comments: "A must-visit for thrill-seekers!"
+        comments: "A must-visit for thrill-seekers!",
+        title: "Outdoor Adventure"
     },
     {
         cityId: "672430ef4a985393f95ead87",
@@ -91,7 +99,8 @@ const itineraries = [
         duration: 3,
         likes: 0,
         hashtags: ["family", "fun"],
-        comments: "Perfect for a family trip!"
+        comments: "Perfect for a family trip!",
+        title: "Family Fun Day"
     },
     {
         cityId: "672430ef4a985393f95ead88",
@@ -101,7 +110,8 @@ const itineraries = [
         duration: 7,
         likes: 0,
         hashtags: ["nature", "explore"],
-        comments: "A breathtaking journey through nature!"
+        comments: "A breathtaking journey through nature!",
+        title: "Nature Exploration"
     },
     {
         cityId: "672430ef4a985393f95ead88",
@@ -111,7 +121,8 @@ const itineraries = [
         duration: 4,
         likes: 0,
         hashtags: ["adventure", "outdoors"],
-        comments: "Perfect for outdoor enthusiasts!"
+        comments: "Perfect for outdoor enthusiasts!",
+        title: "Outdoor Enthusiast Adventure"
     },
     {
         cityId: "672430ef4a985393f95ead88",
@@ -121,7 +132,8 @@ const itineraries = [
         duration: 5,
         likes: 0,
         hashtags: ["art", "culture"],
-        comments: "An artistic experience like no other."
+        comments: "An artistic experience like no other.",
+        title: "Artistic Experience"
     },
     {
         cityId: "672430ef4a985393f95ead88",
@@ -131,7 +143,8 @@ const itineraries = [
         duration: 3,
         likes: 0,
         hashtags: ["family", "fun"],
-        comments: "A great trip for the whole family!"
+        comments: "A great trip for the whole family!",
+        title: "Family Day Out"
     },
     {
         cityId: "672430ef4a985393f95ead88",
@@ -141,7 +154,8 @@ const itineraries = [
         duration: 6,
         likes: 0,
         hashtags: ["food", "travel"],
-        comments: "Delicious food and amazing sights!"
+        comments: "Delicious food and amazing sights!",
+        title: "Food and Sights Tour"
     },
     {
         cityId: "672430ef4a985393f95ead8a",
@@ -151,7 +165,8 @@ const itineraries = [
         duration: 7,
         likes: 0,
         hashtags: ["adventure", "exploration"],
-        comments: "An unforgettable adventure!"
+        comments: "An unforgettable adventure!",
+        title: "Exploration Adventure"
     },
     {
         cityId: "672430ef4a985393f95ead8a",
@@ -161,7 +176,8 @@ const itineraries = [
         duration: 3,
         likes: 0,
         hashtags: ["family", "fun"],
-        comments: "Great for family trips!"
+        comments: "Great for family trips!",
+        title: "Family Getaway"
     },
     {
         cityId: "672430ef4a985393f95ead8a",
@@ -171,7 +187,8 @@ const itineraries = [
         duration: 4,
         likes: 0,
         hashtags:["food", "local"],
-        comments: "Delicious local cuisine!"
+        comments: "Delicious local cuisine!",
+        title: "Local Cuisine Experience"
     },
     {
         cityId: "672430ef4a985393f95ead8a",
@@ -181,7 +198,8 @@ const itineraries = [
         duration: 6,
         likes: 0,
         hashtags: ["relaxation", "nature"],
-        comments: "A serene escape into nature."
+        comments: "A serene escape into nature.",
+        title: "Nature Relaxation Retreat"
     },
     {
         cityId: "672430ef4a985393f95ead8b",
@@ -191,7 +209,8 @@ const itineraries = [
         duration: 5,
         likes: 0,
         hashtags: ["culture", "explore"],
-        comments: "Amazing cultural experience!"
+        comments: "Amazing cultural experience!",
+        title: "Cultural Exploration"
     },
     {
         cityId: "672430ef4a985393f95ead8b",
@@ -201,7 +220,8 @@ const itineraries = [
         duration: 3,
         likes: 0,
         hashtags: ["sightseeing", "history"],
-        comments: "So much history to see!"
+        comments: "So much history to see!",
+        title: "Historical Sightseeing"
     },
     {
         cityId: "672430ef4a985393f95ead8c",
@@ -211,7 +231,8 @@ const itineraries = [
         duration: 6,
         likes: 0,
         hashtags: ["adventure", "nature"],
-        comments: "A breathtaking adventure in nature!"
+        comments: "A breathtaking adventure in nature!",
+        title: "Nature Adventure"
     },
     {
         cityId: "672430ef4a985393f95ead8c",
@@ -221,7 +242,8 @@ const itineraries = [
         duration: 2,
         likes: 0,
         hashtags: ["relaxation", "beach"],
-        comments: "Perfect spot to unwind!"
+        comments: "Perfect spot to unwind!",
+        title: "Beach Relaxation"
     },
     {
         cityId: "672430ef4a985393f95ead8c",
@@ -231,7 +253,8 @@ const itineraries = [
         duration: 8,
         likes: 0,
         hashtags: ["exploration", "foodie"],
-        comments: "Amazing food and great sights!"
+        comments: "Amazing food and great sights!",
+        title: "Foodie Exploration"
     },
     {
         cityId: "672430ef4a985393f95ead8d",
@@ -241,7 +264,8 @@ const itineraries = [
         duration: 5,
         likes: 0,
         hashtags:["culture", "history"],
-        comments: "A deep dive into the local culture!"
+        comments: "A deep dive into the local culture!",
+        title: "Cultural Dive"
     },
     {
         cityId: "672430ef4a985393f95ead8d",
@@ -251,7 +275,8 @@ const itineraries = [
         duration: 3,
         likes: 0,
         hashtags: ["family", "fun"],
-        comments: "Great for the whole family!"
+        comments: "Great for the whole family!",
+        title: "Family Adventure"
     },
     {
         cityId: "672430ef4a985393f95ead8d",
@@ -261,7 +286,8 @@ const itineraries = [
         duration: 7,
         likes: 0,
         hashtags: ["adventure", "hiking"],
-        comments: "The hiking trails are spectacular!"
+        comments: "The hiking trails are spectacular!",
+        title: "Spectacular Hiking Trails"
     },
     {
         cityId: "672430ef4a985393f95ead8d",
@@ -271,7 +297,8 @@ const itineraries = [
         duration: 4,
         likes: 0,
         hashtags: ["shopping", "local"],
-        comments: "Perfect places to shop local crafts!"
+        comments: "Perfect places to shop local crafts!",
+        title: "Local Shopping Experience"
     },
     {
         cityId: "672430ef4a985393f95ead8e",
@@ -281,7 +308,8 @@ const itineraries = [
         duration: 6,
         likes: 0,
         hashtags: ["foodie", "culinary"],
-        comments: "A delightful culinary journey!"
+        comments: "A delightful culinary journey!",
+        title: "Culinary Journey"
     },
     {
         cityId: "672430ef4a985393f95ead8e",
@@ -290,8 +318,9 @@ const itineraries = [
         price: 5,
         duration: 3,
         likes: 0,
-        hashtags:["art", "exploration"] ,
-        comments: "Exploring the art scene was amazing!"
+        hashtags:["art", "exploration"],
+        comments: "Exploring the art scene was amazing!",
+        title: "Art Scene Exploration"
     },
     {
         cityId: "672430ef4a985393f95ead8e",
@@ -300,8 +329,9 @@ const itineraries = [
         price: 2,
         duration: 4,
         likes: 0,
-        hashtags:["nature", "relaxation"] ,
-        comments: "A peaceful retreat in nature."
+        hashtags:["nature", "relaxation"],
+        comments: "A peaceful retreat in nature.",
+        title: "Nature Retreat"
     },
     {
         cityId: "672430ef4a985393f95ead90",
@@ -311,7 +341,8 @@ const itineraries = [
         duration: 6,
         likes: 0,
         hashtags:["adventure", "hiking"],
-        comments: "Amazing trails and breathtaking views!"
+        comments: "Amazing trails and breathtaking views!",
+        title: "Hiking Adventure"
     },
     {
         cityId: "672430ef4a985393f95ead91",
@@ -321,7 +352,8 @@ const itineraries = [
         duration: 7,
         likes: 0,
         hashtags: ["beach", "relaxation"],
-        comments: "The perfect getaway to unwind and relax!"
+        comments: "The perfect getaway to unwind and relax!",
+        title: "Beach Getaway"
     },
     {
         cityId: "672430ef4a985393f95ead91",
@@ -331,9 +363,11 @@ const itineraries = [
         duration: 3,
         likes: 0,
         hashtags: ["history", "culture"],
-        comments: "An enriching cultural experience."
+        comments: "An enriching cultural experience.",
+        title: "Cultural Enrichment"
     },
 ];
+
 
 Itinerary.insertMany(itineraries);
 
