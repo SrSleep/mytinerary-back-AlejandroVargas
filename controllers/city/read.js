@@ -33,7 +33,7 @@ let idCity = async (req, res, next) => {
     let id = req.params.id;
     let cities = await City.findById(id);
     return res.status(200).json({
-      response: cities,
+      city: cities,
     });
   } catch (error) {
     next(error);

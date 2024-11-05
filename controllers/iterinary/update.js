@@ -8,6 +8,7 @@ const updateByIdItinerary = async (req, res, next) => {
             {
                 cityId: itinerary.cityId,
                 userPhoto: itinerary.userPhoto,
+                title: itinerary.title,
                 userName: itinerary.userName,
                 price: itinerary.price,
                 duration: itinerary.duration,
