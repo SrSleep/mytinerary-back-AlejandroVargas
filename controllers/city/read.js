@@ -6,13 +6,14 @@ let cities = async (req, res, next) => {
     let query = {}
     if (name) {
       query.name = { $regex: `^${name}`, $options: "i"};
-    }
+    }      
     let cities = await City.find(query);
     return res.status(200).json({
       cities: cities,
     });
   } catch (error) {
     next(error);
+    
   }
 };
 
