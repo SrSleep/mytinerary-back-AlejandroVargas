@@ -7,9 +7,6 @@ export default async (req, res, next) => {
             { online: true }
         );
 
-
-
-
         return res.status(200).json({
             success: true,
             message: "User signed in successfully",
