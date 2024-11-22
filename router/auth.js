@@ -3,6 +3,7 @@ import { Router } from "express"
 //Controllers
 import signIn from "../controllers/auth/signIn.js"
 import signOut from "../controllers/auth/signOut.js"
+import validateToken from "../controllers/auth/validate.js"
 
 //middlewares
 import accountExists from "../middlewares/account_exists.js"
@@ -13,6 +14,7 @@ import passportGoogle from "../middlewares/passport_google.js"
 
 const router = Router()
 
+router.get('/validatetoken',passport.authenticate('jwt', { session: false }),validateToken)
 router.post('/signin', accountExists, isValidPassword, generateToken, signIn)
 router.post('/signout', passport.authenticate('jwt', { session: false }), signOut)
 

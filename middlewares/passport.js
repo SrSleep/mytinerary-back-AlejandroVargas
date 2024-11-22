@@ -9,8 +9,6 @@ export default passport.use(
             secretOrKey: process.env.SECRET_KEY_JWT,
         },
         async (payload, done) => {
-            console.log(payload);
-            
             try {
                 let user = await User.findOne({ email: payload.email, online: true });
                 if (user) {
