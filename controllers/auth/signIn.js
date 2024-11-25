@@ -12,6 +12,8 @@ export default async (req, res, next) => {
             message: "User signed in successfully",
             user: {
                 email: req.user.email,
+                name: req.user.name,
+                lastName: req.user.lastName,
                 role: req.user.role,
                 photo: req.user.photo
             },

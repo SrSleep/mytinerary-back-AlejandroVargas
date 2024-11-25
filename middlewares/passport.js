@@ -12,6 +12,7 @@ export default passport.use(
             try {
                 let user = await User.findOne({ email: payload.email, online: true });
                 if (user) {
+                    user.password = undefined;
                     return done(null, user);
                 } else {
                     return done(null, false);

@@ -6,6 +6,8 @@ export default async (req, res, next) => {
         if (usersExists) {
             req.user = {
                 email: usersExists.email,
+                name: usersExists.name,
+                lastName: usersExists.lastName,
                 password: usersExists.password,
                 role: usersExists.role,
                 photo: usersExists.photo

@@ -2,21 +2,21 @@ import Joi from 'joi';
 
 const schema = Joi.object({
         name: Joi.string().required().pattern(/^[A-Za-z ]+$/).messages({
-        'string.base': 'Name must be a string.',
-        'string.pattern.base': 'Name must only contain letters (no numbers or special characters).',
+        'string.base': 'Name: must be a string.',
+        'string.pattern.base': 'Name: must only contain letters (no numbers or special characters).',
         'string.empty': 'Name is required.',
-        'any.required': 'The value is required.'
+        'any.required': 'Name: value is required.'
     }),
 
     lastName: Joi.string().required().pattern(/^[A-Za-z ]+$/).messages({
-        'string.base': 'Name must be a string.',
-        'string.pattern.base': 'Name must only contain letters (no numbers or special characters).',
-        'string.empty': 'Name is required.',
-        'any.required': 'The value is required.'
+        'string.base': 'Last Name: must be a string.',
+        'string.pattern.base': 'Last Name: must only contain letters (no numbers or special characters).',
+        'string.empty': 'Last Name is required.',
+        'any.required': 'Last Name: required.'
     }),
 
     email: Joi.string().email().required().messages({
-        'string.base': 'Email must be a string.',
+        'string.base': 'Email: must be a string.',
         'string.email': 'Invalid email format.',
         'string.empty': 'Email is required.',
         'any.required': 'The value is required.'
@@ -36,8 +36,8 @@ const schema = Joi.object({
         }),
 
     photo: Joi.string().required().messages({
-        'string.base': 'Address must be a string.',
-        'string.empty': 'Address is required.',
+        'string.base': 'Photo must be a string.',
+        'string.empty': 'Photo is required.',
         'any.required': 'The value is required.'
     }),
 

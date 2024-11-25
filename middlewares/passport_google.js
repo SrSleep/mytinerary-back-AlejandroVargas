@@ -1,6 +1,7 @@
 import passport from "passport";
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import User from "../models/User.js";
+import bycrypt from "bcryptjs";
 
 export default passport.use(
     new GoogleStrategy(
@@ -13,14 +14,15 @@ export default passport.use(
             try {
                 let user = await User.findOne({ email: profile.emails[0].value });
                 if (!user) {
+                    let hashPassword = bycrypt.hashSync(profile.id, 10);
                     user = new User({
                         name: profile.name.givenName,
                         lastName: profile.name.familyName,
                         email: profile.emails[0].value,
-                        password: profile.id,
+                        password: hashPassword,
                         photo: profile.photos[0].value,
                         cityId: "672430ef4a985393f95ead88",
-                        online: false,
+                        online: true,
                         role: "user"
                     })
                     await user.save();

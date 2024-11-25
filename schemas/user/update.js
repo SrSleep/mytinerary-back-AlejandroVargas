@@ -8,14 +8,14 @@ const schema = Joi.object({
         'any.required': 'The id user is required.'
     }),
     
-    name: Joi.string().required().pattern(/^[A-Za-z ]+$/).messages({
+    name: Joi.string().required().pattern(/^[A-Za-zñÑáéíóúÁÉÍÓÚ ]+$/).messages({
         'string.base': 'Name must be a string.',
         'string.pattern.base': 'Name must only contain letters (no numbers or special characters).',
         'string.empty': 'Name is required.',
         'any.required': 'The value is required.'
     }),
 
-    lastName: Joi.string().required().pattern(/^[A-Za-z ]+$/).messages({
+    lastName: Joi.string().required().pattern(/^[A-Za-zñÑáéíóúÁÉÍÓÚ ]+$/).messages({
         'string.base': 'Name must be a string.',
         'string.pattern.base': 'Name must only contain letters (no numbers or special characters).',
         'string.empty': 'Name is required.',

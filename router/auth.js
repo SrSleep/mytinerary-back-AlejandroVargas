@@ -4,6 +4,7 @@ import { Router } from "express"
 import signIn from "../controllers/auth/signIn.js"
 import signOut from "../controllers/auth/signOut.js"
 import validateToken from "../controllers/auth/validate.js"
+import signInGoogle from "../controllers/auth/signInGoogle.js"
 
 //middlewares
 import accountExists from "../middlewares/account_exists.js"
@@ -24,7 +25,7 @@ router.get(
     passportGoogle.authenticate('google', { session: false, scope: ['profile', 'email'] }));
 router.get(
     '/signin/google/callback',
-    passportGoogle.authenticate('google', { session: false, failureRedirect: '/home' }), generateToken, signIn);
+    passportGoogle.authenticate('google', { session: false, failureRedirect: '/home' }), generateToken, signInGoogle);
 
 
 export default router
