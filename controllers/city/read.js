@@ -41,4 +41,15 @@ let idCity = async (req, res, next) => {
   }
 };
 
-export { cities, nameCity, idCity };
+let listCountries = async (req, res, next) => {
+  try {
+    let countries = await City.find({}, 'country _id');
+    return res.status(200).json({
+      countries: countries
+    })
+  } catch (error) {
+    next(error);
+  }
+};
+
+export { cities, nameCity, idCity , listCountries };

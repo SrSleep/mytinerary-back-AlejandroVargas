@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { cities, nameCity, idCity } from "../controllers/city/read.js";
+import { cities, nameCity, idCity, listCountries } from "../controllers/city/read.js";
 import updateByIdCity from "../controllers/city/update.js";
 import deleteCity from "../controllers/city/delete.js";
 import createCity from "../controllers/city/create.js";
@@ -7,6 +7,7 @@ import createCity from "../controllers/city/create.js";
 const router = Router();
 
 router.get("/all", cities);
+router.get("/country", listCountries);
 router.get("/name/:text", nameCity);
 router.get("/id/:id", idCity);
 router.post('/create', createCity)

@@ -1,13 +1,15 @@
 const error_400 = (error, req, res, next) => {
-    console.log( "archivo error 400: "+ error.status);
-      
-    if (error.status === 400) {
-        return res.status(400).json({
-          error: 'Bad Request',
-          message: error.message || 'The request is invalid',
-        });
-      }
-      next(error);
-}
 
+  if (error.status === 400) {
+    return res.status(400).json({
+      success: false,
+      error: {
+        message: "The request could not be processed due to invalid or missing parameters.",
+        details: "Please check the provided data and try again."
+      }
+    });
+  }
+  return next(error);
+
+}
 export default error_400
