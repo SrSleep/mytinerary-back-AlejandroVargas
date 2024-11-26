@@ -5,6 +5,7 @@ import signIn from "../controllers/auth/signIn.js"
 import signOut from "../controllers/auth/signOut.js"
 import validateToken from "../controllers/auth/validate.js"
 import signInGoogle from "../controllers/auth/signInGoogle.js"
+import validator from "../middlewares/validator.js"
 
 //middlewares
 import accountExists from "../middlewares/account_exists.js"
@@ -13,11 +14,15 @@ import generateToken from "../middlewares/generate_token.js"
 import passport from "../middlewares/passport.js"
 import passportGoogle from "../middlewares/passport_google.js"
 
+//schema
+import signInSchema from "../schemas/auth/signIn.js"
+import signOutSchema from "../schemas/auth/signOut.js"
+
 const router = Router()
 
 router.get('/validatetoken',passport.authenticate('jwt', { session: false }),validateToken)
-router.post('/signin', accountExists, isValidPassword, generateToken, signIn)
-router.post('/signout', passport.authenticate('jwt', { session: false }), signOut)
+router.post('/signin', validator(signInSchema), accountExists, isValidPassword, generateToken, signIn)
+router.post('/signout',validator(signOutSchema), passport.authenticate('jwt', { session: false }), signOut)
 
 //ruta google
 router.get(
