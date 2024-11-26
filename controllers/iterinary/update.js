@@ -2,7 +2,7 @@ import Itinerary from "../../models/Itinerary.js";
 
 const updateByIdItinerary = async (req, res, next) => {
     try {
-        let itinerary = req.body        
+        let itinerary = req.body   
         let update = await Itinerary.findByIdAndUpdate(
             itinerary._id,
             {
@@ -14,14 +14,14 @@ const updateByIdItinerary = async (req, res, next) => {
                 duration: itinerary.duration,
                 likes: itinerary.likes,
                 hashtags: itinerary.hashtags,
-                comments: itinerary.hashtags
+                comments: itinerary.comments
             },
             { new: true }
         )
         return res.status(200).json({
             response: update
         })
-    } catch (error) {
+    } catch (error) {        
         next(error)
     }
 
